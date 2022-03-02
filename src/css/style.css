@@ -396,7 +396,6 @@
 
 .chekout-container{  
   margin: 0 290px;
-  height: 550px;
   background: #979797;
   
 }
@@ -427,7 +426,6 @@ border: 1px solid green;
   position: relative;
   appearance: none;
   transition: all 0.2s ease 0s;
-  font-weight: var(--chakra-fontWeights-bold);
   border-radius: 0.5rem;
   padding: 15px;
  
@@ -442,4 +440,90 @@ border: 1px solid green;
   border: 2px solid red;
   margin: 20px;
   
+}
+
+
+
+.shipping{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:repeat(3, 1fr) ;
+  gap: 10px;
+  justify-content: center;
+  
+  align-content: center;
+border: 1px solid green;
+}
+
+.shipping-address {
+    grid-column: 1 / 3;
+  
+}
+
+.shipping> div {
+  border: 1px solid yellow;
+  justify-content: center;
+  
+}
+
+
+
+.shipping-input {
+  width: 100%;
+  min-width: 0px;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  transition: all 0.2s ease 0s;
+  border-radius: 0.5rem;
+  padding: 15px;
+ 
+}
+
+
+.payment{
+  display: grid;
+ 
+  grid-template-columns: repeat(2, 1fr) ;
+}
+.peyment-text{
+  grid-row: 1/3;
+  
+}
+.radios{
+  display: flex;
+  padding-top: 15px;
+}
+
+.e-money-checked{
+  display: flex;
+  margin-top: 20px;
+  
+  
+}
+.e-money-checked>div{
+  flex:1;
+  
+}
+
+.e-money-input-checked{
+  width: 100%;
+  min-width: 0px;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  transition: all 0.2s ease 0s;
+  border-radius: 0.5rem;
+  padding: 15px;
+}
+.cash-checked{
+  border: yellow solid 2px;
+  display: flex;
+  text-align: start;
+}
+.cash-checked::before{
+  content: url(/images/assets/shared/desktop/icon-cash-on-delivery.svg);
+  border: yellow solid 2px; 
 }
