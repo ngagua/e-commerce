@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.header-container {
+  background-color: #101010;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+.header-container .header-content {
+  width: 1110px;
+  border-bottom: #979797 solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.header-container .header-content .logo {
+  width: 143px;
+  height: 25px;
+}
+.header-container .header-content .nav-bar .header-menu-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 30px;
+}
+.header-container .header-content .nav-bar .header-menu-list .header-links {
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-container .header-content .nav-bar .header-menu-list .header-links:hover {
+  color: #D87D4A;
+}
+.header-container .header-content cart-logo {
+  width: 23px;
+  height: 20px;
+}
+
+.footer {
+  background-color: #101010;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 365px;
+  width: 1110px;
+  background: #101010;
+  color: rgba(255, 255, 255, 0.582);
+  padding: 75px 0 52px 0;
+}
+.footer .footer-container .nav-bar-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .footer-container .nav-bar-footer .footer-menu-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-content: space-between;
+  gap: 30px;
+}
+.footer .footer-container .nav-bar-footer .footer-menu-list .footer-links {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer .footer-container .nav-bar-footer .footer-menu-list .footer-links:hover {
+  color: #D87D4A;
+}
+.footer .footer-container .nav-social-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .footer-container .nav-social-footer .social-logo {
+  cursor: pointer;
+  padding: 10px;
+}
+.footer .footer-container .nav-social-footer .social-logo:hover {
+  color: #D87D4A;
+}
+
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+.overline {
+  font-family: "Manrope", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

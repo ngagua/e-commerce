@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audiophile checkout</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/main.css">
 
 
 </head>
@@ -14,28 +15,26 @@
 <body>
     <header class="header-container">
         <div class="header-content">
-            <div class="title">
-                <a href="#" class="home-page-link">audiophile</a>
+            <div class="logo">
+                <a href="/src/html/index.html" class="logo">
+                    <img src="/images/assets/shared/desktop/logo.svg" alt="Audiophile" />
+                </a>
             </div>
             <nav class="nav-bar">
-                <div class="home"><a href="#" class="header-links">HOME</a></div>
-                <div class="headphones">
-                    <a href="#" class="header-links">HEADPHONES</a>
-                </div>
-                <div class="speakers">
-                    <a href="#" class="header-links">SPEAKERS</a>
-                </div>
-                <div class="earphones">
-                    <a href="#" class="header-links">EARPHONES</a>
-                </div>
+                <ul class="header-menu-list ">
+                    <li class="sub-title"><a href="#" class="header-links ">HOME</a></li>
+                    <li class="sub-title"><a href="#" class="header-links ">HEADPHONES</a></li>
+                    <li class="sub-title"><a href="#" class="header-links ">SPEAKERS</a></li>
+                    <li class="sub-title"><a href="#" class="header-links ">EARPHONES</a></li>
+                </ul>
             </nav>
             <div class="cart-logo">
-                <a href="#" class="cart"><img class="cart-logo-img" src="/images/assets/shared/desktop/icon-cart.svg"
-                        alt="cart" /></a>
+                <a href="checkout.html" class="cart"><img class="cart-logo-img"
+                        src="/images/assets/shared/desktop/icon-cart.svg" alt="cart" /></a>
             </div>
         </div>
     </header>
-    <div class="go-back"><a href="/src/pages/index.html">Go back</a> </div>
+    <div class="go-back"><a href="/src/html/index.html">Go back</a> </div>
 
     <div class="chekout-main-container">
         <div class="chekout-container">
@@ -91,11 +90,11 @@
             <div class="payment">
                 <div class="peyment-text">payment Method</div>
                 <div class="e-money-radio radios">
-                    <input class="e-money-input" type="radio" value="e-money-output" checked>
+                    <input class="e-money-input" type="radio" value="e-money-output" checked name="pay-radios">
                     <p>e-Money</p>
                 </div>
                 <div class="cash-radio radios">
-                    <input class="cash-input " type="radio" value="cash-output">
+                    <input class="cash-input " type="radio" value="cash-output" name="pay-radios">
                     <p>Cash on Delivery</p>
                 </div>
             </div>
