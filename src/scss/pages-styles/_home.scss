@@ -1,0 +1,234 @@
+
+//hero banner 
+.hero-container {
+    display: flex;  
+    justify-content: center; 
+    background-color:$background-black;
+    .hero-block {
+            height: 630px;
+            width: 1110px;
+            background: url("/images/assets/home/desktop/image-hero.jpg");
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        .hero-container-content{
+            padding-top: 200px ;
+            .hero-title{
+               margin:25px 0;     
+            }
+            .hero-text{
+                padding-bottom: 25px;
+                    color: $Secondary-White;
+                    opacity: 0.5;
+        }
+
+    }
+}  
+     
+  }
+  
+
+  //shop section
+.shop-section {
+    display: flex;
+    justify-content: center;
+    .shop-container {
+        width: 1100px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 150px 0;
+        gap: 70px 30px;
+                
+        .shop-item{
+            position: relative;
+            background-color: $Primary-Gray;
+            width: 350px;
+            height: 203px;
+            border-radius: 8px;
+            padding: 116px 0px 30px 0px;
+            text-align: center;
+            cursor: pointer;
+                .shop-image {
+                    position: absolute;             
+                    top:0;
+                    left:50%;
+                    transform: translate(-50%, -38%);
+                    img{
+                        max-width: 100%;                        
+                    }          
+                }
+                .shop-text{
+                        
+                    .shop-btn-text {                            
+                        text-decoration: none;
+                        color: grey;
+                        
+                        &:hover {
+                            color: $Secondary-Orange;
+                        }
+                        &::after {
+                            content: url(/images/assets/shared/desktop/icon-arrow-right.svg);
+                            padding: 10px;
+                            color: $Primary-Dark;
+                        }
+            }
+        }
+      }
+    }
+}
+
+
+//speaker xz9 banner
+.speaker-banner-container {
+    display: flex;
+    justify-content: center;   
+    .speaker-banner {
+      width: 1110px;
+      height: 550px;
+      display: flex;
+      justify-content: space-around;
+      align-content: flex-end;          
+      background: url(/images/assets/home/desktop/pattern-circles.svg), $Primary-Orange;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      .speaker {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        .speaker-image {
+          height: 490px;
+          width: 410px;
+          position:absolute;  
+          top:50%;
+          left:50%;
+          transform: translate(-50%, -38%);
+        }
+      }
+      .speaker-banner-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;    
+        padding-left: 100px;
+        
+            .speaker-banner-title {          
+              padding: 15px 0;
+            }
+            .speaker-banner-description {            
+              color: $Secondary-White;
+              padding: 15px 0;
+              
+            }
+        }
+      
+    }
+     
+}
+
+
+//speaker zx7 banner
+.speaker-banner-zx7-container{
+  display: flex;
+  justify-content: center;
+  .speaker-banner-zx7 {
+    width: 1100px;
+    background: url(/images/assets/home/desktop/image-speaker-zx7.jpg);
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 0;
+    height: 320px;
+    border-radius: 8px;
+    .speaker-xz7-banner-text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 92px;
+    }
+  }
+ 
+}
+
+
+//speaker yx1 banner  
+.yx1-earphone-banner-container{
+  display: flex;
+  justify-content: center;
+  .yx1-earphone-banner{
+    width: 1100px;
+    display: flex;
+    margin: 40px 0;  
+    height: 320px;
+    border-radius: 8px;
+    gap:30px;
+    .yx1-earphone-img{
+      flex: 1;
+      background: url(/images/assets/home/desktop/image-earphones-yx1.jpg);
+      background-size: cover;
+      border-radius: 8px;
+    }
+    .yx1-earphone-text-container{
+      flex: 1;
+      background: $Primary-Gray;
+      border-radius: 8px;
+     
+      .yx1-earphone-text{
+        padding: 120px 70px 0;
+          h4 {
+            margin-bottom: 20px;
+          }
+      }    
+     }
+   }
+}
+  
+
+ 
+  
+  
+.epiloge-container {
+  display: flex;
+  justify-content: center;
+  margin: 200px 0;
+  .epiloge{
+    display: flex;
+    width: 1100px;  
+    height: 588px;
+    gap:15px;
+
+    .epiloge-content{
+      flex:1;
+      padding-top: 156px;
+      
+      .epiloge-title  {
+        padding-bottom: 30px;
+        span {
+          color: $Primary-Orange;
+        }
+      }
+    
+    }
+      .epiloge-img{
+        flex: 1;
+        background: url(/images/assets/shared/desktop/image-best-gear.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+      }
+    }
+}
+
+
+
+
+
+
+
+
+

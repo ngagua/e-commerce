@@ -1,6 +1,6 @@
 .header-container {
-    background-color: #101010;
-    color: #FFFFFF;
+    background-color:$background-black;
+    color: $Primary-White;
     display: flex;
     justify-content: center;     
     
@@ -32,7 +32,7 @@
                     color: #ffffff;
                     text-decoration: none;
                     &:hover {
-                        color: #D87D4A;
+                        color: $Primary-Orange;
                       }
                   }
               }

@@ -1,0 +1,46 @@
+.orange-button {    
+    height: 48px;
+    width: 160px;
+    background-color: $Primary-Orange;
+    color: $Primary-White;
+    font-size: 13px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $Secondary-Orange;
+      }
+  } 
+
+
+.black-button {    
+    height: 48px;
+    width: 160px;
+    background-color: $Primary-Dark;
+    color: $Primary-White;
+    font-size: 13px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+      }
+} 
+
+  
+
+.invisible-button {    
+  height: 48px;
+  width: 160px;
+  border: 1px solid $Secondary-black;
+  color: $Secondary-black;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background-color: $Primary-Dark;
+    color: $Primary-White;
+    }
+} 
