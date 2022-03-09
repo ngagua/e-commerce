@@ -5,44 +5,46 @@
     justify-content: center;     
     
     .header-content{  
-        
-        width: 100%;
+        width: 1110px;  
         border-bottom: #979797 solid 1px;
         display: flex;
         justify-content: space-between;
         align-items: center;    
         padding: 30px 0;
         .icon-menu{
-            padding: 20px;
-            width: 16px;
-            height: 15px;   
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-            
-            span {                
-                width: 15px;
-                border:1px solid $Secondary-White;
-            }
+            display: none;
         }
 
         .logo{
             width: 143px;
             height: 25px;
-            
         }
 
         .nav-bar{              
-            display: none;
+            .header-menu-list {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                align-content: space-between;  
+                gap: 30px;
+        
+        
+                .header-links {
+                    text-align: center;
+                    justify-content: center;
+                    color: #ffffff;
+                    text-decoration: none;
+                    &:hover {
+                        color: $Primary-Orange;
+                      }
+                  }
+              }
         }
 
         .cart-logo{
             width: 23px;
             height: 20px;
             position: relative;
-            margin-right: 20px;
             
             .cart-item-number{
                 position: absolute;    

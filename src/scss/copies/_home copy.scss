@@ -5,18 +5,14 @@
   @include flex-center;
     background-color:$background-black;
     .hero-block {
-         
-            height: 509px;            
-            background: url("/images/assets/home/mobile/image-header.jpg");
-            background-size: cover;
-            background-position: center ;
+            height: 630px;
+            width: 1110px;
+            background: url("/images/assets/home/desktop/image-hero.jpg");
+            background-size: auto;
+            background-position: center;
             background-repeat: no-repeat;
         .hero-container-content{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-            padding-top: 100px ;
+            padding-top: 200px ;
             .hero-title{
                margin:25px 0;     
             }
@@ -27,7 +23,7 @@
         }
 
     }
-    }  
+}  
      
   }
   
@@ -38,7 +34,6 @@
     .shop-container {
         width: 1100px;
         display: flex;
-        flex-wrap: wrap;
         align-content: center;
         justify-content: center;
         padding: 150px 0;
@@ -87,27 +82,27 @@
 .speaker-banner-container {
   @include flex-center;  
     .speaker-banner {
-      
-      height: 600px;
+      width: 1110px;
+      height: 550px;
       display: flex;
-      flex-direction: column;
+      justify-content: space-around;
       align-content: flex-end;          
       background: url(/images/assets/home/desktop/pattern-circles.svg), $Primary-Orange;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       border-radius: 8px;
-      margin: 0 24px;
       .speaker {
         flex: 1;
-        align-self: center;
         position: relative;
-        padding-top: 50px ;        
+        overflow: hidden;
         .speaker-image {
-          height: 207px;
-          width: 172px;
-          align-self: center;
-          
+          height: 490px;
+          width: 410px;
+          position:absolute;  
+          top:50%;
+          left:50%;
+          transform: translate(-50%, -38%);
         }
       }
       .speaker-banner-text {
@@ -116,19 +111,14 @@
         flex-direction: column;
         justify-self: center;
         align-self: center;    
-        text-align: center;
+        padding-left: 100px;
         
             .speaker-banner-title {          
               padding: 15px 0;
             }
             .speaker-banner-description {            
               color: $Secondary-White;
-              padding: 15px;
-              
-            }
-            .zx9-button{
-              align-self: center;
-              margin-bottom: 25px;
+              padding: 15px 0;
               
             }
         }
@@ -142,19 +132,20 @@
 .speaker-banner-zx7-container{
   @include flex-center;
   .speaker-banner-zx7 {
-    background: url(/images/assets/home/mobile/image-speaker-zx7.jpg);
+    width: 1100px;
+    background: url(/images/assets/home/desktop/image-speaker-zx7.jpg);
+  
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 40px 24px;
+    margin: 40px 0;
     height: 320px;
-    // width: 100vh;
     border-radius: 8px;
     .speaker-xz7-banner-text {
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: 30px;
+      padding-left: 92px;
     }
   }
  
@@ -165,31 +156,25 @@
 .yx1-earphone-banner-container{
   @include flex-center;
   .yx1-earphone-banner{
-    
+    width: 1100px;
     display: flex;
-    flex-direction: column;
-    margin: 40px 24px;  
-    height: 424px;
+    margin: 40px 0;  
+    height: 320px;
     border-radius: 8px;
     gap:30px;
     .yx1-earphone-img{
       flex: 1;
-      // width: 100vh;
-      
-      border-radius: 8px;
-      background: url(/images/assets/home/mobile/image-earphones-yx1.jpg);
-      background-repeat: no-repeat;
+      background: url(/images/assets/home/desktop/image-earphones-yx1.jpg);
       background-size: cover;
+      border-radius: 8px;
     }
     .yx1-earphone-text-container{
       flex: 1;
-      width: 100vh;      
       background: $Primary-Gray;
       border-radius: 8px;
      
       .yx1-earphone-text{
-        flex:1;
-        align-self: center;
+        padding: 120px 70px 0;
           h4 {
             margin-bottom: 20px;
           }
@@ -199,23 +184,19 @@
 }
  
    
-//epiloge section
+  //epiloge section
 .epiloge-container {
   @include flex-center;
-  margin: 120px 0;
+  margin: 200px 0;
   .epiloge{
     display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
-    text-align: center;
-    height: 698px;
+    width: 1100px;  
+    height: 588px;
     gap:15px;
 
     .epiloge-content{
       flex:1;
-      padding-top: 100px;
-      
-      
+      padding-top: 156px;
       
       .epiloge-title  {
         padding-bottom: 30px;
@@ -227,7 +208,7 @@
     }
       .epiloge-img{
         flex: 1;
-        background: url(/images/assets/shared/mobile/image-best-gear.jpg);
+        background: url(/images/assets/shared/desktop/image-best-gear.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

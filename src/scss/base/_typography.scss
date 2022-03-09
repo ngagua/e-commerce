@@ -95,3 +95,12 @@ body {
     line-height: 25px;
     
 }
+
+@media (max-width: 480px) {
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+  }

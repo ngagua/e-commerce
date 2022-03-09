@@ -1,3 +1,4 @@
+@import './abstract/mixins';
 @import './base/reset';
 @import './abstract/variables';
 @import './layout/header.scss';
@@ -6,4 +7,5 @@
 @import 'pages-styles/home';
 @import './abstract/buttons';
 @import './abstract/mixins';
+@import './_modals.scss/_cart-modal';
 

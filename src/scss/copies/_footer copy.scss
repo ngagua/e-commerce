@@ -5,27 +5,22 @@
     justify-content: center;
     .footer-container {
         display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        width: 1110px;
         background: $Primary-Dark;
         color:$Secondary-White;
         padding: 75px 0 52px 0;
         .footer-info-text{
-            padding: 20px;
             opacity: 0.5;
-            
         }
         .copyright{
             opacity: 0.5;
-            padding: 20px;
         }
 
         .nav-bar-footer {
             display: flex;
             
-            justify-content: center;
+            justify-content: flex-end;
             
             .footer-menu-list{
                 display: flex;
@@ -33,8 +28,7 @@
                 list-style: none;
                 justify-content: flex-end;
                 align-content: space-between;  
-                gap: 10px;     
-                margin: 20px 0;
+                gap: 30px;     
                 .footer-links {
                     text-decoration: none;
                     color:$Secondary-White;
@@ -49,7 +43,7 @@
         // }
         .nav-social-footer{
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
             
             .social-logo{
