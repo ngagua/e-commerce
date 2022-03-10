@@ -8,15 +8,30 @@
          
             height: 509px;            
             background: url("/images/assets/home/mobile/image-header.jpg");
-            background-size: cover;
-            background-position: center ;
-            background-repeat: no-repeat;
+            @include picture-center;
+            @media (min-width: 384px) {
+              height: 647px; 
+              background: url("/images/assets/home/tablet/image-header.jpg");
+              @include picture-center;
+            }
+            @media  (min-width: 784px){
+              height: 630px;
+              width: 1110px;
+              background: url("/images/assets/home/desktop/image-hero.jpg");
+              @include picture-center;             
+            }
         .hero-container-content{
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-            padding-top: 100px ;
+          padding-top: 100px;
+          text-align: center;
+          @media (min-width: 784px) { 
+              text-align: start;            
+              align-items: flex-start;
+              padding: 150px 0 0 15px; 
+            }
             .hero-title{
                margin:25px 0;     
             }
@@ -36,30 +51,45 @@
 .shop-section {
   @include flex-center;
     .shop-container {
-        width: 1100px;
+        width: 327px;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
         padding: 150px 0;
-        gap: 70px 30px;
+        gap: 100px 30px;
+        @media (min-width: 384px) {
+          width: 729px;          
+        }
+        @media (min-width:  784px) {
+          width: 1110px;          
+        }
                 
         .shop-item{
             position: relative;
             background-color: $Primary-Gray;
-            width: 350px;
-            height: 203px;
+            width: 327px;
+            height: 217px;
             border-radius: 8px;
             padding: 116px 0px 30px 0px;
             text-align: center;
             cursor: pointer;
+            @media (min-width: 384px) {
+            width: 223px;
+            height: 180px;         
+            }
+            @media (min-width:  784px) {
+              width: 350px;
+              height: 200px;         
+            }
                 .shop-image {
                     position: absolute;             
                     top:0;
                     left:50%;
                     transform: translate(-50%, -38%);
                     img{
-                        max-width: 100%;                        
+                      width:100%;
+                      height:100%;                      
                     }          
                 }
                 .shop-text{
@@ -87,7 +117,7 @@
 .speaker-banner-container {
   @include flex-center;  
     .speaker-banner {
-      
+      width: 327px;
       height: 600px;
       display: flex;
       flex-direction: column;
@@ -98,16 +128,46 @@
       background-repeat: no-repeat;
       border-radius: 8px;
       margin: 0 24px;
+      @media (min-width: 384px) {
+        justify-content: center;
+        width: 730px;
+        height: 720px; 
+      }
+      @media  (min-width: 784px){
+        height: 550px;
+        width: 1110px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: flex-end; 
+                   
+      }
       .speaker {
         flex: 1;
         align-self: center;
         position: relative;
-        padding-top: 50px ;        
-        .speaker-image {
+        padding-top: 50px ; 
+        overflow: hidden;
+        height: 100%;
+        .xz9-photos {
+          img {
           height: 207px;
           width: 172px;
           align-self: center;
           
+          @media  (min-width: 384px){
+            height: 237px;
+            width: 198px;
+          }
+          @media  (min-width: 784px){
+            height: 490px;
+            width: 410px;
+            position:absolute;  
+            top:50%;
+            left:50%;
+            transform: translate(-42%, -38%);
+            overflow: hidden;
+            }
+          }
         }
       }
       .speaker-banner-text {
@@ -142,13 +202,26 @@
 .speaker-banner-zx7-container{
   @include flex-center;
   .speaker-banner-zx7 {
+    width: 327px;
     background: url(/images/assets/home/mobile/image-speaker-zx7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 40px 24px;
     height: 320px;
-    // width: 100vh;
     border-radius: 8px;
+    @media  (min-width: 384px){
+      background: url(/images/assets/home/tablet/image-speaker-zx7.jpg);
+      width: 689px;
+      height: 320px;
+      
+    }
+    @media  (min-width: 784px){
+      background: url(/images/assets/home/desktop/image-speaker-zx7.jpg) ;
+      width: 1100px;
+        height: 320px; 
+        margin: 100px 24px;
+       
+    }
     .speaker-xz7-banner-text {
       height: 100%;
       display: flex;
@@ -165,31 +238,46 @@
 .yx1-earphone-banner-container{
   @include flex-center;
   .yx1-earphone-banner{
-    
+    width: 327px;
     display: flex;
     flex-direction: column;
-    margin: 40px 24px;  
+    margin: 60px 24px;  
     height: 424px;
     border-radius: 8px;
     gap:30px;
+    @media  (min-width: 384px){
+      width: 689px;
+      height: 320px; 
+      flex-direction: row;
+    }
+    @media  (min-width: 784px){
+      width: 1100px;
+        height: 320px; 
+        flex-direction: row;
+    }
     .yx1-earphone-img{
+      display: none;
       flex: 1;
-      // width: 100vh;
-      
       border-radius: 8px;
-      background: url(/images/assets/home/mobile/image-earphones-yx1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
+      display: block;
+      overflow: hidden;
+            
+      img {    
+        width:100%;
+        height:100%;
+      }
+      
     }
     .yx1-earphone-text-container{
       flex: 1;
-      width: 100vh;      
       background: $Primary-Gray;
       border-radius: 8px;
+      text-align: center;
      
       .yx1-earphone-text{
         flex:1;
         align-self: center;
+        padding-top: 50px;
           h4 {
             margin-bottom: 20px;
           }
@@ -202,18 +290,29 @@
 //epiloge section
 .epiloge-container {
   @include flex-center;
-  margin: 120px 0;
+  margin: 50px 24px;
   .epiloge{
+    width: 327px;
     display: flex;
     flex-direction: column-reverse;
     align-content: center;
     text-align: center;
     height: 698px;
     gap:15px;
+    @media  (min-width: 384px){
+      width: 689px;
+      height: 633px; 
+      
+    }
+    @media  (min-width: 784px){
+      width: 1100px;
+        height: 588px; 
+        flex-direction: row;
+    }
 
     .epiloge-content{
       flex:1;
-      padding-top: 100px;
+      padding-top: 60px;
       
       
       
@@ -227,10 +326,14 @@
     }
       .epiloge-img{
         flex: 1;
-        background: url(/images/assets/shared/mobile/image-best-gear.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        
+        img {    
+          width:100%;
+          height:100%;
+          border-radius: 8px;
+          
+        }
+        
         
       }
     }
