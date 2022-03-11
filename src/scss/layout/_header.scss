@@ -2,8 +2,7 @@
     background-color:$background-black;
     color: $Primary-White;
     display: flex;
-    justify-content: center;     
-    
+    justify-content: center;         
     .header-content{          
         width: 100%;
         border-bottom: #979797 solid 1px;
@@ -11,35 +10,21 @@
         justify-content: space-between;
         align-items: center;    
         padding: 30px 0;
+        position: relative;
         @media  (min-width: 384px){
             width: 689px;   
             
           }
           @media  (min-width: 784px){
             width: 1100px;
+            .burger {
+                // display: none;
+             }
               
           }
-        .icon-menu{
-            padding: 20px;
-            width: 16px;
-            height: 15px;   
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-            @media  (min-width: 784px){
-                display: none;
-                  
-              }
-            span {                
-                width: 15px;
-                border:1px solid $Secondary-White;
-            }
-        }
-
+        
+        
         .logo{
-            
             width: 143px;
             height: 25px;
             

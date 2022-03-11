@@ -50,6 +50,7 @@
   //shop section
 .shop-section {
   @include flex-center;
+  border: 1px solid red;
     .shop-container {
         width: 327px;
         display: flex;
@@ -94,18 +95,28 @@
                 }
                 .shop-text{
                         
-                    .shop-btn-text {                            
+                    .shop-btn-text {      
+                       position: relative;                      
                         text-decoration: none;
                         color: grey;
                         
+                        &::after {
+                          position: absolute;
+                          content: url(/images/assets/shared/desktop/icon-arrow-right.svg);
+                          padding: 10px;
+                          color: $Primary-Dark;
+                          top: -54%;
+                          right: -20px;
+                          transition: right 0.3s ease-in 0s;
+                        }
                         &:hover {
                             color: $Secondary-Orange;
-                        }
-                        &::after {
-                            content: url(/images/assets/shared/desktop/icon-arrow-right.svg);
-                            padding: 10px;
-                            color: $Primary-Dark;
-                        }
+                            &::after {
+                              right: -25px;
+                              }
+                          }
+                            
+
             }
         }
       }
@@ -128,6 +139,7 @@
       background-repeat: no-repeat;
       border-radius: 8px;
       margin: 0 24px;
+      overflow: hidden;
       @media (min-width: 384px) {
         justify-content: center;
         width: 730px;
@@ -146,7 +158,7 @@
         align-self: center;
         position: relative;
         padding-top: 50px ; 
-        overflow: hidden;
+        
         height: 100%;
         .xz9-photos {
           img {
