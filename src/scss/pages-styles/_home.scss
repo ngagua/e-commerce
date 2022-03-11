@@ -50,9 +50,9 @@
   //shop section
 .shop-section {
   @include flex-center;
-  border: 1px solid red;
+  border: 1px solid blue;
     .shop-container {
-        width: 327px;
+        // width: 327px;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -60,10 +60,10 @@
         padding: 150px 0;
         gap: 100px 30px;
         @media (min-width: 384px) {
-          width: 729px;          
+          // width: 729px;          
         }
         @media (min-width:  784px) {
-          width: 1110px;          
+          // width: 1110px;          
         }
                 
         .shop-item{

@@ -341,26 +341,15 @@ body {
 .shop-section {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid blue;
 }
 .shop-section .shop-container {
-  width: 327px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   padding: 150px 0;
   gap: 100px 30px;
-}
-@media (min-width: 384px) {
-  .shop-section .shop-container {
-    width: 729px;
-  }
-}
-@media (min-width: 784px) {
-  .shop-section .shop-container {
-    width: 1110px;
-  }
 }
 .shop-section .shop-container .shop-item {
   position: relative;
@@ -727,17 +716,6 @@ body {
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-.burger .menuToggle .menu-items {
-  display: flex;
-  justify-content: center;
-  border: 1px solid red;
-  position: absolute;
-  top: 60px;
-  transform: translatey(-150%);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  background-color: white;
-  flex-wrap: wrap;
-}
 .burger .menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
@@ -756,8 +734,22 @@ body {
 .burger .menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-.burger .menuToggle input:checked ~ div {
-  transform: translate(0%, 0);
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  transform: translatey(-150%);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.show-menu-items {
+  transform: translate(0);
 }
 
 /*# sourceMappingURL=main.css.map */

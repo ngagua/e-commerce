@@ -1,6 +1,7 @@
 .burger {
     .menuToggle {
         position: relative;
+        
         input {
             display: block;
             width: 40px;
@@ -28,19 +29,7 @@
                         background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                         opacity 0.55s ease;
             }
-            .menu-items{
-                @include flex-center;
-                border: 1px solid red;
-                position: absolute;
-                top: 60px;
-                transform: translatey(-150%);
-                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
-                background-color: white;
-                flex-wrap: wrap;
-                // display: none;
-                
-            
-        }
+         
 
         span:first-child{
         transform-origin: 0% 0%;
@@ -64,14 +53,32 @@
         transform: rotate(-45deg) translate(0, -1px);
         }
 
-        input:checked ~ div {
-        transform: translate(0%, 0);
-        }
+        
     }
 
 }
 
 
+.menu-items {
+    @include flex-center;
+    border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    // height: 100%;
+    top: 60px;
+    transform: translatey(-150%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
+    background-color: white;
+    flex-wrap: wrap;
+    // display: none;
+    
+    
+
+}
+
+.show-menu-items {
+    transform: translate(0);
+}
 
 
 
