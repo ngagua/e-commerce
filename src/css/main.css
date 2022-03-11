@@ -29,6 +29,9 @@
   .header-container .header-content {
     width: 1100px;
   }
+  .header-container .header-content .burger {
+    display: none;
+  }
 }
 .header-container .header-content .logo {
   width: 143px;
