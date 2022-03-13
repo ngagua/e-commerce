@@ -118,161 +118,163 @@
         </div>
     </header>
 
-
-    <div class="outer-container">
-        <div class="go-back"><a href="/src/html/index.html">Go back</a> </div>
-    </div>
-    <div class="outer-container">
-        <div class="checkout">
-            <div class="outer-container">
-                <div class="checkout_main-container">
-                    <h1 class="checkout_title">CHECKOUT</h1>
-
-
-                    <div class="checkout_form">
-
-
-                        <div class="checkout_billing-section checkout_section">
-                            <p class="sub-title">BILLING DETAILS</p>
-                            <div class="billing checkout_section-form">
-                                <div class="billing_name checkout_input">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" placeholder="Nikusha Gagua" />
-                                </div>
-
-                                <div class="billing_email checkout_input">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" name="email" placeholder="ngagua@gmail.com" />
-                                </div>
-
-                                <div class="billing_number checkout_input">
-                                    <label for="tel">Phone number</label>
-                                    <input type="tel" name="tel" placeholder="+995 577-77-77-77" />
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class="checkout_shipping-section checkout_section">
-                            <p class="sub-title">SHIPPING INFO</p>
-                            <div class="shipping checkout_section-form">
-                                <div class="shipping_address checkout_input">
-                                    <label for="address">Your Address</label>
-                                    <input type="text" name="address" placeholder="rustaveli str. N1" />
-                                </div>
-
-                                <div class="shipping_zip-code checkout_input">
-                                    <label for="zip-code">Zip Code</label>
-                                    <input type="number" name="zip-code" placeholder="10001" />
-                                </div>
-
-                                <div class="shipping_city checkout_input">
-                                    <label for="city">City</label>
-                                    <input type="text" name="city" placeholder="Tbilisi" />
-                                </div>
-                                <div class="shipping_country checkout_input">
-                                    <label for="country">Country</label>
-                                    <input type="text" name="country" placeholder="Georgia" />
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="checkout_payment-section checkout_section">
-                            <p>Payment Details</p>
-                            <div class="payment checkout_section-form">
-                                <p>Payment Method</p>
-                                <div class="payment_radios checkout_radios">
-
-                                    <div class="e-money-radio  checkout_radio">
-                                        <input class="e-money-input" type="radio" value="e-money" name="pay-radios"
-                                            checked>
-                                        <p>e-Money</p>
-                                    </div>
-                                    <div class="cash-radio checkout_radio">
-                                        <input class="cash-input " type="radio" value="cash-output" name="pay-radios">
-                                        <p>Cash on Delivery</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="payment_e-money-number checkout_input">
-                                    <label for="e-money-num">e-Money Number</label>
-                                    <input type="number" name="e-money-num" placeholder="238521993" />
-                                </div>
-
-
-                                <div class="payment_e-money-pin checkout_input">
-                                    <label for="zip-code">e-Money PIN</label>
-                                    <input type="number" name="zip-code" placeholder="6891" />
-                                </div>
-
-                                <div class="cash-checked">
-                                    <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery <br>
-                                        courier arrives at your residence. Just make sure your address is correct so
-                                        that <br>
-
-                                        your order will not be cancelled.</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-
-            <div class="outer-container">
-                <div class="checkout_sidebar">
-                    <div class="summary">
-                        <div class="summary_head">
-                            <h6 class="summary_title">SUMMARY </h6>
-
-                        </div>
-                        <div class="summary_items">
-                            <div class="summary_item">
-                                <img src="/images/assets/cart/image-xx99-mark-two-headphones.jpg" alt=" X99 MK II">
-                                <div class="summary_item-info">
-                                    <h6 class="summary_item-name">X99 MK II</h6>
-                                    <p class="summary_item-price">$ 2,999</p>
-                                </div>
-                            </div>
-                            <p class="summary_item-quantity">x1</p>
-                        </div>
-                        <div class="summary_detail">
-                            <div class="summary_total">
-                                <p>Total </p>
-                                <p><strong>$ 2,999</strong></p>
-                            </div>
-                            <div class="summary_shiping">
-                                <p>Shipping </p>
-                                <p><strong>$ 50</strong></p>
-                            </div>
-                            <div class="summary_vat">
-                                <p>VAT (Included) </p>
-                                <p><strong>$ 599</strong></p>
-                            </div>
-                            <div class="summary_grand-total">
-                                <p>Grand Total </p>
-                                <p><strong>$ 3648 </strong></p>
-                            </div>
-                        </div>
-                        <div class="summary_pay-btn">
-                            <a href="#" class="orange-button summary_checkout-btn">CONTINUE & PAY</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <div class="checkout-whole-container">
+        <div class="outer-container">
+            <div class="go-back"><a href="/src/html/index.html">Go back</a> </div>
         </div>
-    </div>
+        <div class="outer-container">
+            <div class="checkout">
+                <div class="outer-container">
+                    <div class="checkout_main-container">
+                        <h1 class="checkout_title">CHECKOUT</h1>
+
+
+                        <div class="checkout_form">
+
+
+                            <div class="checkout_billing-section checkout_section">
+                                <p class="sub-title">BILLING DETAILS</p>
+                                <div class="billing checkout_section-form">
+                                    <div class="billing_name checkout_input">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" placeholder="Nikusha Gagua" />
+                                    </div>
+
+                                    <div class="billing_email checkout_input">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" name="email" placeholder="ngagua@gmail.com" />
+                                    </div>
+
+                                    <div class="billing_number checkout_input">
+                                        <label for="tel">Phone number</label>
+                                        <input type="tel" name="tel" placeholder="+995 577-77-77-77" />
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="checkout_shipping-section checkout_section">
+                                <p class="sub-title">SHIPPING INFO</p>
+                                <div class="shipping checkout_section-form">
+                                    <div class="shipping_address checkout_input">
+                                        <label for="address">Your Address</label>
+                                        <input type="text" name="address" placeholder="rustaveli str. N1" />
+                                    </div>
+
+                                    <div class="shipping_zip-code checkout_input">
+                                        <label for="zip-code">Zip Code</label>
+                                        <input type="number" name="zip-code" placeholder="10001" />
+                                    </div>
+
+                                    <div class="shipping_city checkout_input">
+                                        <label for="city">City</label>
+                                        <input type="text" name="city" placeholder="Tbilisi" />
+                                    </div>
+                                    <div class="shipping_country checkout_input">
+                                        <label for="country">Country</label>
+                                        <input type="text" name="country" placeholder="Georgia" />
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="checkout_payment-section checkout_section">
+                                <p>Payment Details</p>
+                                <div class="payment checkout_section-form">
+                                    <p>Payment Method</p>
+                                    <div class="payment_radios checkout_radios">
+
+                                        <div class="e-money-radio  checkout_radio">
+                                            <input class="e-money-input" type="radio" value="e-money" name="pay-radios"
+                                                checked>
+                                            <p>e-Money</p>
+                                        </div>
+                                        <div class="cash-radio checkout_radio">
+                                            <input class="cash-input " type="radio" value="cash-output"
+                                                name="pay-radios">
+                                            <p>Cash on Delivery</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="payment_e-money-number checkout_input">
+                                        <label for="e-money-num">e-Money Number</label>
+                                        <input type="number" name="e-money-num" placeholder="238521993" />
+                                    </div>
+
+
+                                    <div class="payment_e-money-pin checkout_input">
+                                        <label for="zip-code">e-Money PIN</label>
+                                        <input type="number" name="zip-code" placeholder="6891" />
+                                    </div>
+
+                                    <div class="cash-checked">
+                                        <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery
+                                            <br>
+                                            courier arrives at your residence. Just make sure your address is correct so
+                                            that <br>
+
+                                            your order will not be cancelled.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="outer-container">
+                    <div class="checkout_sidebar">
+                        <div class="summary">
+                            <div class="summary_head">
+                                <h6 class="summary_title">SUMMARY </h6>
+
+                            </div>
+                            <div class="summary_items">
+                                <div class="summary_item">
+                                    <img src="/images/assets/cart/image-xx99-mark-two-headphones.jpg" alt=" X99 MK II">
+                                    <div class="summary_item-info">
+                                        <h6 class="summary_item-name">X99 MK II</h6>
+                                        <p class="summary_item-price">$ 2,999</p>
+                                    </div>
+                                </div>
+                                <p class="summary_item-quantity">x1</p>
+                            </div>
+                            <div class="summary_detail">
+                                <div class="summary_total">
+                                    <p>Total </p>
+                                    <p><strong>$ 2,999</strong></p>
+                                </div>
+                                <div class="summary_shiping">
+                                    <p>Shipping </p>
+                                    <p><strong>$ 50</strong></p>
+                                </div>
+                                <div class="summary_vat">
+                                    <p>VAT (Included) </p>
+                                    <p><strong>$ 599</strong></p>
+                                </div>
+                                <div class="summary_grand-total">
+                                    <p>Grand Total </p>
+                                    <p><strong>$ 3648 </strong></p>
+                                </div>
+                            </div>
+                            <div class="summary_pay-btn">
+                                <a href="#" class="orange-button summary_checkout-btn">CONTINUE & PAY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
-
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
