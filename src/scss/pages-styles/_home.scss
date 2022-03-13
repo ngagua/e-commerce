@@ -32,13 +32,17 @@
               align-items: flex-start;
               padding: 150px 0 0 15px; 
             }
+            .hero-subtitle{
+              color: $Secondary-White;
+              opacity: 0.5;
+            }
             .hero-title{
                margin:25px 0;     
             }
             .hero-text{
                 padding-bottom: 25px;
-                    color: $Secondary-White;
-                    opacity: 0.5;
+                color: $Secondary-White;
+                opacity: 0.5;
         }
 
     }
@@ -50,8 +54,7 @@
   //shop section
 .shop-section {
   @include flex-center;
-  border: 1px solid blue;
-    .shop-container {
+  .shop-container {
         // width: 327px;
         display: flex;
         flex-wrap: wrap;
@@ -72,7 +75,7 @@
             width: 327px;
             height: 217px;
             border-radius: 8px;
-            padding: 116px 0px 30px 0px;
+            padding: 90px 0px 20px 0px;
             text-align: center;
             cursor: pointer;
             @media (min-width: 384px) {
@@ -94,7 +97,9 @@
                     }          
                 }
                 .shop-text{
-                        
+                        .shop-section-title{
+                          margin: 10px;
+                        }
                     .shop-btn-text {      
                        position: relative;                      
                         text-decoration: none;
@@ -268,7 +273,7 @@
         flex-direction: row;
     }
     .yx1-earphone-img{
-      display: none;
+      // display: none;
       flex: 1;
       border-radius: 8px;
       display: block;

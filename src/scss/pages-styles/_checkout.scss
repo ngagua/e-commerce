@@ -1,0 +1,158 @@
+.checkout{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  
+  @media  (min-width: 384px){
+    width: 689px;   
+  }
+  @media  (min-width: 784px){
+    width: 1100px;
+    flex-direction: row;
+  }
+  &_title {
+    padding-left: 24px;
+    color: $Primary-Dark;
+  }
+
+  
+
+    &_main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $Secondary-White;
+        border-radius: 8px;
+    }
+    &_section{
+      padding:0 24px;
+      margin: 24px 0;
+    }
+    &_section-form{
+      display: grid;
+      grid-template-columns:  1fr;
+      gap: 15px;
+      
+      @media  (min-width: 384px){
+        grid-template-columns:  1fr 1fr; 
+        .shipping_address{
+          grid-column: 1 / 3;
+         }
+         .cash-checked{
+          grid-column: 1 / 3;
+          
+          
+         }
+      }
+      
+    }
+    &_form {
+
+    }
+    &_input {
+      display: flex;
+      flex-direction: column;
+      input {
+        background: inherit;
+        border: 1px solid $border-grey;
+        border-radius: 8px;
+        width: 100%;
+        padding: 18px 0 18px 24px ;
+        
+      }
+    }
+    &_radio{
+      display: flex;
+      align-items: center;
+    }
+    .cash-checked{
+      display: flex;
+     }
+    .cash-checked::before{
+      content: url(/images/assets/shared/desktop/icon-cash-on-delivery.svg);
+      
+    }
+}
+
+body {
+  background-color: $body-color;
+}
+  
+  
+
+
+
+
+
+  .checkout_sidebar{
+    height: 380px;
+    width: 350px;
+    border-radius: 8px;
+    padding: 24px;
+    background-color: $Secondary-White;
+    
+  .summary {
+   
+    border-radius: 8px;
+    
+    
+    &_head {
+      margin-bottom: 30px;
+    }
+    &_items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+
+    
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width:64px;
+        height:64px;
+      }
+     
+    }
+  
+
+    &_input-group {
+      align-self: center;
+      clear: both;
+      margin: 15px 0;
+      position: relative;
+      width: 100%;
+    }
+  &_detail {
+    div{
+      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding-top: 10px ;
+    }
+    }
+  &_pay-btn{
+    display: flex;
+    justify-content: center;
+  }
+    &_checkout-btn {
+    
+      text-align: center;
+      margin-top: 30px;
+      width: 248px;
+      height: 48px;
+      padding-top: 12px;
+      
+    }
+
+  }
+    
+  }
+

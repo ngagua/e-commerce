@@ -44,6 +44,7 @@
                 list-style: none;                
                 gap: 10px;     
                 margin: 20px 0;
+                padding-left: 0;
                 @media  (min-width: 384px){
                     flex-direction: row;  }
                 @media  (min-width: 784px){
@@ -68,6 +69,7 @@
                     text-align: left;           
                   }
                   @media  (min-width: 784px){
+                    
                     display: grid;
                     grid-template-areas:
                         "text social"

@@ -61,16 +61,23 @@
 
 .menu-items {
     @include flex-center;
-    border: 1px solid red;
     position: absolute;
     width: 100%;
-    // height: 100%;
-    top: 60px;
+    top: 8%;
     transform: translatey(-150%);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
-    background-color: white;
+    background-color: $Secondary-White;
+    color: $Primary-Dark;
     flex-wrap: wrap;
-    // display: none;
+    z-index: 20;
+    
+    .shop-container{
+        padding: 70px 0 70px;
+        
+        .shop-item{
+            opacity: 1;
+        }
+    }
     
     
 
@@ -79,15 +86,10 @@
 .show-menu-items {
     transform: translate(0);
 }
-
-
-
-
-
-
-
-
-
+.blur-backround {
+    filter: blur(3px);
+   
+}
 
 
 

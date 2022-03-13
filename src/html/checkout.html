@@ -14,7 +14,53 @@
 
 <body>
     <header class="header-container">
+
+
+
+        <div class="modal-cart hidden">
+            <div class="modal-cart_container">
+                <div class="modal-cart_head">
+                    <h6 class="modal-cart_title">Cart <span>(1)</span></h6>
+                    <button class="modal-cart_remove-btn">Remove all</button>
+                </div>
+                <div class="modal-cart_items">
+                    <div class="modal-cart_item">
+                        <img src="/images/assets/cart/image-xx99-mark-two-headphones.jpg" alt=" X99 MK II">
+                        <div class="modal-cart_item-info">
+                            <h6 class="modal-cart_item-name">X99 MK II</h6>
+                            <p class="modal-cart_item-price">$ 2,999</p>
+                        </div>
+                        <div class="modal_input-group">
+                            <input type="button" value="-" class="button-minus" data-field="quantity"
+                                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
+                            <input type="number" step="1" min="0" value="1" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity"
+                                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-cart_summary">
+                    <p>Total </p>
+                    <p><strong>$ 2,999</strong></p>
+                </div>
+                <a href="./checkout.html" class="orange-button modal-cart_checkout-btn">Checkout</a>
+            </div>
+        </div>
+
         <div class="header-content">
+            <div class="burger">
+                <div class="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <div></div>
+                </div>
+            </div>
+
             <div class="logo">
                 <a href="/src/html/index.html" class="logo">
                     <img src="/images/assets/shared/desktop/logo.svg" alt="Audiophile" />
@@ -22,147 +68,265 @@
             </div>
             <nav class="nav-bar">
                 <ul class="header-menu-list ">
-                    <li class="sub-title"><a href="#" class="header-links ">HOME</a></li>
-                    <li class="sub-title"><a href="#" class="header-links ">HEADPHONES</a></li>
-                    <li class="sub-title"><a href="#" class="header-links ">SPEAKERS</a></li>
-                    <li class="sub-title"><a href="#" class="header-links ">EARPHONES</a></li>
+                    <li class="sub-title"><a href="./index.html" class="header-links ">HOME</a></li>
+                    <li class="sub-title"><a href="./headphones.html" class="header-links ">HEADPHONES</a></li>
+                    <li class="sub-title"><a href="./speakers.html" class="header-links ">SPEAKERS</a></li>
+                    <li class="sub-title"><a href="./earphones.html" class="header-links ">EARPHONES</a></li>
                 </ul>
             </nav>
+
             <div class="cart-logo">
-                <a href="checkout.html" class="cart"><img class="cart-logo-img"
-                        src="/images/assets/shared/desktop/icon-cart.svg" alt="cart" /></a>
+                <img class="cart-logo-img" src="/images/assets/shared/desktop/icon-cart.svg" alt="cart" />
+                <span class="cart-item-number">1</span>
             </div>
+
+
+            <div class="modal-cart hidden">
+                <div class="modal-cart__content">
+                    <div class="modal-cart__header">
+                        <h6 class="modal-cart__title">Cart <span>(1)</span></h6>
+                        <button class="modal-cart__remove">Remove all</button>
+                    </div>
+                    <div class="modal-cart__items">
+                        <div class="modal-cart__item">
+                            <img src="/images/assets/cart/image-xx99-mark-two-headphones.jpg" alt=" X99 MK II"
+                                width="64" height="64">
+                            <div class="modal-cart__item-info">
+                                <h6 class="modal-cart__item-title">X99 MK II</h6>
+                                <p class="modal-cart__item-price">$ 2,999</p>
+                            </div>
+                            <div class="modal_input-group">
+                                <input type="button" value="-" class="button-minus" data-field="quantity"
+                                    onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
+                                <input type="number" step="1" min="0" value="1" name="quantity" class="quantity-field">
+                                <input type="button" value="+" class="button-plus" data-field="quantity"
+                                    onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-cart__summary">
+                        Total <span>$ 2,999</span>
+                    </div>
+                    <a href="./checkout.html" class="orange-button modal-cart__checkout-btn">Checkout</a>
+                </div>
+            </div>
+
         </div>
     </header>
-    <div class="go-back"><a href="/src/html/index.html">Go back</a> </div>
 
-    <div class="chekout-main-container">
-        <div class="chekout-container">
-            <div class="chekout-title">CHECKOUT</div>
-            <div class="chekout-section">BILLING DETAILS</div>
-            <div class="billing">
-                <div class="billing-name">
-                    <div class="billing-name-text ">
-                        <p>Name</p>
+
+    <div class="outer-container">
+        <div class="go-back"><a href="/src/html/index.html">Go back</a> </div>
+    </div>
+    <div class="outer-container">
+        <div class="checkout">
+            <div class="outer-container">
+                <div class="checkout_main-container">
+                    <h1 class="checkout_title">CHECKOUT</h1>
+
+
+                    <div class="checkout_form">
+
+
+                        <div class="checkout_billing-section checkout_section">
+                            <p class="sub-title">BILLING DETAILS</p>
+                            <div class="billing checkout_section-form">
+                                <div class="billing_name checkout_input">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" placeholder="Nikusha Gagua" />
+                                </div>
+
+                                <div class="billing_email checkout_input">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" placeholder="ngagua@gmail.com" />
+                                </div>
+
+                                <div class="billing_number checkout_input">
+                                    <label for="tel">Phone number</label>
+                                    <input type="tel" name="tel" placeholder="+995 577-77-77-77" />
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="checkout_shipping-section checkout_section">
+                            <p class="sub-title">SHIPPING INFO</p>
+                            <div class="shipping checkout_section-form">
+                                <div class="shipping_address checkout_input">
+                                    <label for="address">Your Address</label>
+                                    <input type="text" name="address" placeholder="rustaveli str. N1" />
+                                </div>
+
+                                <div class="shipping_zip-code checkout_input">
+                                    <label for="zip-code">Zip Code</label>
+                                    <input type="number" name="zip-code" placeholder="10001" />
+                                </div>
+
+                                <div class="shipping_city checkout_input">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" placeholder="Tbilisi" />
+                                </div>
+                                <div class="shipping_country checkout_input">
+                                    <label for="country">Country</label>
+                                    <input type="text" name="country" placeholder="Georgia" />
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="checkout_payment-section checkout_section">
+                            <p>Payment Details</p>
+                            <div class="payment checkout_section-form">
+                                <p>Payment Method</p>
+                                <div class="payment_radios checkout_radios">
+
+                                    <div class="e-money-radio  checkout_radio">
+                                        <input class="e-money-input" type="radio" value="e-money" name="pay-radios"
+                                            checked>
+                                        <p>e-Money</p>
+                                    </div>
+                                    <div class="cash-radio checkout_radio">
+                                        <input class="cash-input " type="radio" value="cash-output" name="pay-radios">
+                                        <p>Cash on Delivery</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="payment_e-money-number checkout_input">
+                                    <label for="e-money-num">e-Money Number</label>
+                                    <input type="number" name="e-money-num" placeholder="238521993" />
+                                </div>
+
+
+                                <div class="payment_e-money-pin checkout_input">
+                                    <label for="zip-code">e-Money PIN</label>
+                                    <input type="number" name="zip-code" placeholder="6891" />
+                                </div>
+
+                                <div class="cash-checked">
+                                    <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery <br>
+                                        courier arrives at your residence. Just make sure your address is correct so
+                                        that <br>
+
+                                        your order will not be cancelled.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div> <input class="billing-input" placeholder="Nikusha Gagua" type="email"></div>
                 </div>
-                <div class="billing-email">
-                    <div class="billing-email-text ">
-                        <p>Email Address</p>
+
+
+
+            </div>
+
+            <div class="outer-container">
+                <div class="checkout_sidebar">
+                    <div class="summary">
+                        <div class="summary_head">
+                            <h6 class="summary_title">SUMMARY </h6>
+
+                        </div>
+                        <div class="summary_items">
+                            <div class="summary_item">
+                                <img src="/images/assets/cart/image-xx99-mark-two-headphones.jpg" alt=" X99 MK II">
+                                <div class="summary_item-info">
+                                    <h6 class="summary_item-name">X99 MK II</h6>
+                                    <p class="summary_item-price">$ 2,999</p>
+                                </div>
+                            </div>
+                            <p class="summary_item-quantity">x1</p>
+                        </div>
+                        <div class="summary_detail">
+                            <div class="summary_total">
+                                <p>Total </p>
+                                <p><strong>$ 2,999</strong></p>
+                            </div>
+                            <div class="summary_shiping">
+                                <p>Shipping </p>
+                                <p><strong>$ 50</strong></p>
+                            </div>
+                            <div class="summary_vat">
+                                <p>VAT (Included) </p>
+                                <p><strong>$ 599</strong></p>
+                            </div>
+                            <div class="summary_grand-total">
+                                <p>Grand Total </p>
+                                <p><strong>$ 3648 </strong></p>
+                            </div>
+                        </div>
+                        <div class="summary_pay-btn">
+                            <a href="#" class="orange-button summary_checkout-btn">CONTINUE & PAY</a>
+                        </div>
                     </div>
-                    <div> <input class="billing-input" type="text" placeholder="ngagua@gmail.com"></div>
-                </div>
-                <div class="billing-number">
-                    <div class="billing-number-text ">
-                        <p>Email Address</p>
-                    </div>
-                    <div> <input class="billing-input" type="text" placeholder="+995 577-77-77-77"></div>
                 </div>
             </div>
-            <div class="chekout-section">SHIPPING INFO</div>
-            <div class="shipping">
-                <div class="shipping-address">
-                    <div class="shipping-address-text ">
-                        <p>Your Address</p>
-                    </div>
-                    <div> <input class="shipping-input" placeholder="rustaveli str. N1"></div>
-                </div>
-                <div class="shipping-zip">
-                    <div class="shipping-zip-text ">
-                        <p>Zip Code</p>
-                    </div>
-                    <div> <input class="shipping-input" type="number" placeholder="10001"></div>
-                </div>
-                <div class="shipping-city">
-                    <div class="shipping-city-text ">
-                        <p>City</p>
-                    </div>
-                    <div> <input class="shipping-input" type="text" placeholder="Tbilisi"></div>
-                </div>
-                <div class="shipping-country">
-                    <div class="shipping-country-text ">
-                        <p>Country</p>
-                    </div>
-                    <div> <input class="shipping-input" type="text" placeholder="Georgia"></div>
-                </div>
-            </div>
-            <div class="payment">
-                <div class="peyment-text">payment Method</div>
-                <div class="e-money-radio radios">
-                    <input class="e-money-input" type="radio" value="e-money-output" checked name="pay-radios">
-                    <p>e-Money</p>
-                </div>
-                <div class="cash-radio radios">
-                    <input class="cash-input " type="radio" value="cash-output" name="pay-radios">
-                    <p>Cash on Delivery</p>
-                </div>
-            </div>
-            <div class="e-money-checked">
-                <div class="e-money-number">
-                    <p>e-Money Number</p>
-                    <input class="e-money-input-checked" type="number" placeholder="238521993">
-                </div>
-                <div class="e-money-pin">
-                    <p>e-Money PIN</p>
-                    <input class="e-money-input-checked" type="number" placeholder="6891">
-                </div>
-            </div>
-            <div class="cash-checked">
-                <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery</p>
-                <p>courier arrives at your residence. Just make sure your address is correct so that</p>
-                <p>your order will not be cancelled.</p>
-            </div>
+
         </div>
-
-        <div class="sidebar"></div>
     </div>
 
-
+    </div>
 
 
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-text">
-                <div class="footer-title">
-                    <a href="#" class="home-page-link">audiophile</a>
+
+            <nav class="nav-bar-footer">
+                <div class="logo">
+                    <a href="/src/html/index.html" class="logo">
+                        <img src="/images/assets/shared/desktop/logo.svg" alt="Audiophile" />
+                    </a>
                 </div>
+
+                <ul class="footer-menu-list">
+                    <li class="sub-title"><a href="./index.html" class="footer-links ">HOME</a></li>
+                    <li class="sub-title"><a href="./headphones.html" class="footer-links ">HEADPHONES</a></li>
+                    <li class="sub-title"><a href="./speakers.html" class="footer-links ">SPEAKERS</a></li>
+                    <li class="sub-title"><a href="./earphones.html" class="footer-links ">EARPHONES</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-content">
                 <div class="footer-info-text">
-                    <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of</p>
-                    <p>music lovers and sound specialists who are devoted to helping you get the most</p>
-                    <p>out of personal audio. Come and visit our demo facility - we’re open 7 days a</p>
-                    <p>week.</p>
+                    <p>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of
+                        music lovers and sound specialists who are devoted to helping you get the most
+                        out of personal audio. Come and visit our demo facility - we’re open 7 days a
+                        week.</p>
                 </div>
                 <div class="copyright">Copyright 2021. All Rights Reserved
                 </div>
-            </div>
-            <div class="footer-links">
-                <nav class="nav-bar-footer">
-                    <div class="home-footer"><a href="#" class="footer-link">HOME</a></div>
-                    <div class="headphones-footer">
-                        <a href="#" class="footer-link">HEADPHONES</a>
-                    </div>
-                    <div class="speakers-footer">
-                        <a href="#" class="footer-link">SPEAKERS</a>
-                    </div>
-                    <div class="earphones-footer">
-                        <a href="#" class="footer-link">EARPHONES</a>
-                    </div>
-                </nav>
                 <nav class="nav-social-footer">
-                    <div class="facebook-logo">
-                        <img src="/images/assets/shared/desktop/icon-facebook.svg" alt="">
+                    <div class="social-logo">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                                fill="#FFF" fill-rule="nonzero" />
+                        </svg>
+
                     </div>
-                    <div class="twitter-logo">
-                        <img src="/images/assets/shared/desktop/icon-twitter.svg" alt="">
+                    <div class="social-logo">
+                        <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                fill="#FFF" fill-rule="nonzero" />
+                        </svg>
                     </div>
-                    <div class="instagram-logo">
-                        <img src="/images/assets/shared/desktop/icon-instagram.svg" alt="">
+                    <div class="social-logo">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                                fill="#FFF" fill-rule="nonzero" />
+                        </svg>
                     </div>
 
                 </nav>
             </div>
         </div>
+
     </footer>
 
 </body>

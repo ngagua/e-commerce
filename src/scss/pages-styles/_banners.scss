@@ -1,0 +1,86 @@
+.banners {
+  
+
+
+    &_head{
+      @include flex-center;
+      align-items: center;
+      height: 100px;
+      background-color: $background-black;
+      @media (min-width: 384px) {
+          height: 245px;       
+        }
+      @media (min-width:  784px) {
+          height: 237px;     
+            
+        } 
+}
+    &_item {
+        @include flex-center;
+        flex-direction: column;
+        height: 724px;
+        text-align: center;
+        margin-top: 30px ;
+        gap: 20px;
+        
+        @media (min-width: 384px) {
+            height: 706px;   
+            margin-top: 50px ;  
+
+          }
+        @media (min-width:  784px) {
+            margin-top: 160px ;
+            flex-direction: row;
+            width: 1110px;     
+            height: 560px;     
+            text-align: left;  
+          } 
+        }
+    &_img{           
+        
+            @media (min-width:  784px) {
+                flex-grow: 0;
+                height: 100%;
+                max-width: 540px;  
+                object-fit: cover;   
+                
+              } 
+          img {
+              width: 100%;
+              display: block;
+              border-radius: 8px;
+          }
+         
+          
+    }
+    &_content {
+            align-self: center;
+            padding-left: 20px;
+            
+            span{
+              opacity: 1;
+            }
+            
+    }
+    &_title {
+      padding:20px 10px 20px 0 ;
+      padding:20px 0;
+      }
+
+     &_text {
+      padding:20px 20px 20px 0;
+    
+     } 
+ .mark1-banner, .zx7-banner{
+    @media (min-width:  784px) {
+        flex-direction: row-reverse;
+      } 
+     
+ }
+
+}
+
+.outer-container{
+  @include flex-center;
+  // text-align: center
+}
