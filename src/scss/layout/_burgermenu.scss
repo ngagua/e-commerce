@@ -1,7 +1,7 @@
 .burger {
     .menuToggle {
         position: relative;
-        
+        margin-left: 24px;
         input {
             display: block;
             width: 40px;
@@ -13,6 +13,7 @@
             opacity: 0; /* hide this */
             z-index: 2; /* and place it over the hamburger */
             -webkit-touch-callout: none;
+            
         }
         span {
             display: block;
@@ -63,9 +64,8 @@
     @include flex-center;
     position: absolute;
     width: 100%;
-    top: 8%;
-    transform: translatey(-150%);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
+    top: -1700px;
+    transform: translate(0);
     background-color: $Secondary-White;
     color: $Primary-Dark;
     flex-wrap: wrap;
@@ -84,7 +84,8 @@
 }
 
 .show-menu-items {
-    transform: translate(0);
+    transform: translatey(1790px);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
 }
 .blur-backround {
     filter: blur(3px);

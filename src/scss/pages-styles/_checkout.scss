@@ -3,24 +3,20 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
-
-  
-  @media  (min-width: 384px){
-    width: 689px;   
-  }
   @media  (min-width: 784px){
     width: 1100px;
     flex-direction: row;
   }
   &_title {
-    padding-left: 24px;
+    padding: 24px;
     color: $Primary-Dark;
   }
 
   
 
     &_main-container{
+      width: 100%;
+      margin: 0 24px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -55,18 +51,25 @@
     &_input {
       display: flex;
       flex-direction: column;
+      gap:10px;
       input {
         background: inherit;
         border: 1px solid $border-grey;
         border-radius: 8px;
         width: 100%;
         padding: 18px 0 18px 24px ;
-        
       }
+      input:focus {
+        border: 1px solid $Primary-Orange;
+        }
+        input:invalid {
+          border:1px solid red;
+        }
     }
     &_radio{
       display: flex;
       align-items: center;
+      gap: 10px;
     }
     .cash-checked{
       display: flex;
@@ -75,15 +78,26 @@
       content: url(/images/assets/shared/desktop/icon-cash-on-delivery.svg);
       
     }
+    .sub-title {
+      color: $Primary-Orange;
+      padding-bottom: 15px;
+    }
 }
 
 
 .checkout_sidebar{
   height: 380px;
-  width: 350px;
+  width: 100%;
   border-radius: 8px;
+  margin: 0 24px;
   padding: 24px;
+  // margin: 0 24px;
+  
   background-color: $Secondary-White;
+  @media  (min-width: 784px){
+    width: 350px;
+    
+  }
   
 .summary {
  
@@ -155,12 +169,15 @@
   
   .go-back{
     text-align: left;
-    width: 100px;
+    width: 100%;
+    margin: 15px 24px;
+    // padding-left: 24px;
   @media  (min-width: 384px){
     width: 689px;   
   }
   @media  (min-width: 784px){
     width: 1100px;
+    padding-left: 24px;
     
   }
   }
